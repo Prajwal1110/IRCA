@@ -1,0 +1,196 @@
+.form-page {
+  position: relative;
+}
+
+label[for="photo"] {
+  position: absolute;
+  top: 0;
+  right: 300px;
+  margin-top: 35px;
+  /* Additional styling for the label if needed */
+}
+
+#photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 35px;
+  /* Additional styling for the input if needed */
+}
+
+
+.top {
+  width: 100%;
+  text-align: center;
+}
+
+.intake-form {
+  width: auto;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.form-page {
+  border: double 6px black;
+  outline: solid 2px black;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.form-page::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+
+.photo-section {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* h2 {
+  margin-bottom: 15px;
+} */
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.column {
+  margin-top: 50px;
+  float: left;
+  width: 50%;
+}
+
+.column label {
+  display: inline-block;
+  width: 40%;
+  font-weight: bold;
+  /* Adjust label width as needed */
+}
+
+.column input[type="text"],
+.column input[type="number"],
+.column input[type="date"],
+.column input[type="radio"] {
+  display: inline-block;
+  width: 55%;
+  border: #f0f0f0;
+  /* Adjust input width as needed */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+select {
+  cursor: pointer;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  /* Align items vertically */
+}
+
+.radio-group label {
+  margin-right: 20px;
+  /* Adjust margin between labels */
+}
+
+
+/* Styling for radio buttons */
+.radio-list {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.radio-list li {
+  display: inline-block;
+  list-style-type: square;
+  margin-right: 20px;
+  text-align: right;
+}
+
+.radio-list label {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: none;
+  font-weight: normal;
+}
+
+.radio-list input[type="radio"] {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 3px;
+  border-color: #f0f0f0;
+}
+
+
+
+.mid {
+  text-align: left;
+  display: grid;
+  grid-template-columns: max-content auto;
+  /* Adjust the columns based on label and input */
+  gap: 10px;
+  /* Gap between elements */
+}
+
+.mid label {
+  align-self: center;
+  margin-bottom: 0;
+}
+.cl input{
+  border-color: #f0f0f0;
+}
+.mid input,
+.mid select {
+  width: calc(100% - 10px);
+  /* Adjusting width for grid gap */
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border-color: #f0f0f0;
+  max-width: 100%;
+  /* Ensure input doesn't exceed container width */
+}
+
+
+.mid1 {
+  text-align: left;
+  display: grid;
+  grid-template-columns: max-content auto;    
+  /* Adjust the columns based on label and input */
+  gap: 10px;
+  /* Gap between elements */
+}
+
+.mid1 label {
+  float: right;
+  align-self: center;
+  /* Vertically center label */
+  /* justify-self: end; Align label to the end */
+  margin-bottom: 0;
+  /* Remove margin bottom for label */
+}
+
+.mid1 input,
+.mid1 select {
+  width: 100%;
+  /* Full width within the grid cell */
+  border-color: #f0f0f0;
+  box-sizing: border-box;
+}

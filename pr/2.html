@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Intakenext</title>
+ 
+     <style>
+         body {
+             position: relative;
+             width: 100%;
+             font-size: 16px; 
+         }
+ 
+         .id1 {
+             border: double 6px rgb(66, 64, 64);
+             outline: solid 2px rgb(68, 64, 64);
+             margin: 30px;
+             min-height: 86vh;
+             padding-left: 16px;
+             box-sizing: border-box; 
+         }
+ 
+         #p1 input[type="text"] {
+             border: none;
+             background: none;
+             outline: none;
+             white-space: nowrap;
+             overflow: hidden;
+             text-overflow: ellipsis;
+             position: absolute;
+             width: 70%;
+         }
+ 
+         table {
+            
+             width: 100%;
+             border: 1px solid black;
+             border-collapse: collapse;
+             margin-top: 20px; 
+             /* box-sizing: border-box; */
+         }
+ 
+         th, td {
+            
+             border: 1px solid black;
+             padding: 8px;
+         }
+ 
+         td input[type="text"] {
+             border: none;
+             background: none;
+             outline: none;
+             white-space: nowrap;
+             overflow: hidden;
+         }
+ 
+         hr {
+             border-color: black;
+             margin-bottom: 20%;
+         }
+          
+         #p2 input[type="text"] {
+            border: none;
+             background: none;
+             outline: none;
+             white-space: nowrap;
+             overflow: hidden;
+             text-overflow: ellipsis;
+             position: absolute;
+             width: 70%;
+         }
+
+         #p2 p input[type="text"] {
+            border: none;
+             background: none;
+             outline: none;
+             white-space: nowrap;
+             overflow: hidden;
+             text-overflow: ellipsis;
+             position: absolute;
+             width: 70%;
+         }
+         .footer {
+            display: inline-block;
+            /* margin-top: 20%; */
+        }
+
+        .footer a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 1px solid black;
+            margin: 0 4px;
+        }
+
+        .footer a.active {
+            background-color: #4CAF50;
+            color: white;
+            border: 1px solid #4CAF50;
+        }
+
+        .footer a:hover:not(.active) {
+            background-color: #ddd;
+        }
+     </style>
+ </head>
+ <body>
+     <div class="id1">
+         <div id="p1">
+             <p><b>Any issue / concerned expressed by client / Family:</b></p>
+             <b>1</b><input type="text" placeholder=""><br><br>
+             <b>2</b> <input type="text" placeholder=""><br><br>
+             <b>3</b><input type="text" placeholder=""><br><br>
+             <b>4</b> <input type="text" placeholder=""><br><br>
+             <p><b>Impression of Intake counsellor: </b><input type="text" placeholder=" "></p>
+             <p><b>Action taken:             </b>  
+             
+              <label>
+                <input
+                  type="radio"
+                  id="option1"
+                  name="choice"
+                  value="option1">
+                Admitted
+              </label>
+
+              <label>
+                <input
+                  type="radio"
+                  id="option2"
+                  name="choice"
+                  value="option2">
+                Given later Date
+              </label>
+
+              <label>
+                <input
+                  type="radio"
+                  id="option3"
+                  name="choice"
+                  value="option3">
+                Referral
+              </label>
+            
+              <label>
+                <input
+                  type="radio"
+                  id="option4"
+                  name="choice"
+                  value="option4">
+                Denied Admission
+              </label>
+
+            </p>
+
+             <p style="position:relative;left: 30%;"><b>Address: </b><input type="text" placeholder=""></p>
+         </div>
+         <hr>
+ 
+         <div id="p2">
+             <table>
+                 <th colspan="4" style="text-align: left;">Contact Phone Numbers:</th>
+                 <tr>
+                     <th> </th>
+                     <th>Number</th>
+                     <th>Name</th>
+                     <th>Relation</th>
+                 </tr>
+                 <tr>
+                     <td><b>Mob No.1</b></td>
+                     <td><input type="text" placeholder="" maxlength="10"></td>
+                     <td><input type="text" placeholder="" maxlength="20"></td>
+                     <td><input type="text" placeholder=""></td>
+                 </tr>
+                 <tr>
+                     <td><b>Mob No.2</b></td>
+                     <td><input type="text" placeholder="" maxlength="10"></td>
+                     <td><input type="text" placeholder=""></td>
+                     <td><input type="text" placeholder=""></td>
+                 </tr>
+                 <tr>
+                     <td><b>Mob No.3</b></td>
+                     <td><input type="text" placeholder="" maxlength="10"></td>
+                     <td><input type="text" placeholder=""></td>
+                     <td><input type="text" placeholder=""></td>
+                 </tr>
+                 <tr>
+                     <td><b>Landline No.1</b></td>
+                     <td><input type="text" placeholder="" maxlength="10"></td>
+                     <td><input type="text" placeholder=""></td>
+                     <td><input type="text" placeholder=""></td>
+                 </tr>
+             </table>
+
+             <p><b>Remarks : </b><input type="text" placeholder=" "><br><input type="text" placeholder=" "><br><input type="text" placeholder=""><br><input type="text" placeholder=""></p> <br>
+
+             <p style="position:relative; left: 75%;"><b><u>Signature of the Counsellor</u></b><br><br><input type="file" id="photo-upload" name="photo" accept="image/*"></p>
+            
+           
+         </div>
+         <center>
+            <div class="footer" >
+                <a href="/1.html">&laquo;</a>
+                
+                <a href="#" >2</a>
+                
+                <a href="/3.html">&raquo;</a>
+            </div>
+        </center>
+     </div>
+ </body>
+ </html>
+ 

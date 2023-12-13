@@ -1,0 +1,181 @@
+<!doctype html>
+
+<head>
+    <meta charset=utf-8>
+    <title>Kannada test</title>
+    <style>
+        @import url(http://fonts.googleapis.com/earlyaccess/notosanskannada.css);
+        /* body { font-family: "Noto Sans Kannada", sans-serif; font-size: 19.0px; line-height: 1.11em; } */
+
+        #form {
+            margin: 3%;
+            border: double 6px rgb(66, 64, 64);
+            outline: solid 2px rgb(68, 64, 64);
+
+        }
+
+
+        #heading {
+            border: 2px solid black;
+            display: inline;
+            padding: 7px;
+            border-radius: 6px;
+            display: inline-block;
+            margin-left: 43%;
+        }
+
+
+        p {
+            line-height: 30pt;
+            margin-left: 15px;
+            word-spacing: 4pt;
+            margin-right: 0px;
+            font-weight: 600;
+        }
+
+        /* -------------------------------------------- */
+        #signature1 {
+            position: relative;
+            padding-left: 40%;
+            text-align: center;
+            height: 100px;
+            width: 600px;
+            text-align: center;
+
+        }
+
+        #name1 {
+            position: absolute;
+            padding-left: 5%;
+        }
+
+        #sign1 {
+            position: absolute;
+            padding-left: 30%;
+        }
+
+        #signature2 {
+            position: relative;
+            padding-left: 40%;
+            text-align: center;
+            height: 100px;
+            width: 600px;
+            text-align: center;
+
+        }
+
+        #name2 {
+            position: absolute;
+            padding-left: 3%;
+        }
+
+        #sign2 {
+            position: absolute;
+            padding-left: 30%;
+        }
+
+        #mobileNo {
+            margin-left: 35%;
+        }
+
+        /* #pageNo{
+    border: 2px black solid;
+    position: fixed;
+    border-radius:30%;
+    padding-top:0.41%;
+    padding-left: 0.1%;
+    margin-left: 850px ;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    text-align: center;
+    bottom: 2.5%;
+}  */
+
+        input[type="text"] {
+            width: 15ch;
+            border: none;
+            border-bottom: 3px dotted #000;
+            text-decoration: none;
+        }
+
+
+
+        .footer {
+            display: inline-block;
+        }
+
+        .footer a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 1px solid black;
+            margin: 0 4px;
+        }
+
+        .footer a.active {
+            background-color: #4CAF50;
+            color: white;
+            border: 1px solid #4CAF50;
+        }
+
+        .footer a:hover:not(.active) {
+            background-color: #ddd;
+        }
+    </style>
+    <!-- <link rel="stylesheet" type="text/css" href="kannada.css" /> -->
+</head>
+
+<body>
+    <div id="form">
+        <h1>
+            <div id="heading">ಸಮ್ಮತಿ ಪತ್ರ</div>
+        </h1>
+
+        <div id="content"><br>
+            <p><i>ನಾನು ಶ್ರೀ
+                    <input type="text">'ಹೋಪ್' ಅಮಲು ಚಿಕಿತ್ಸಾ ಹಾಗೂ ಪುನರ್ವಸತಿ ಕೇಂದ್ರ, ಬೆಳಗಾವಿ, ಇದರ ಮದ್ಯ ವರ್ಜನಾ ಚಿಕಿತ್ಸಾ
+                    ಕಾರ್ಯಕ್ರಮದಲ್ಲಿ ಪಾಲ್ಗೊಳ್ಳಲು ದಿನಾಂಕ
+                    <input type="text"> ರಂದು ಸ್ವ ಇಚ್ಛೆಯಿಂದ ಬಂದಿರುತ್ತೇನೆ. ಈ ಬಗ್ಗೆ ನನ್ನ ಹಾಗೂ ಕುಟುಂಬಸ್ಥರ ಯಾವುದೇ ಆಕ್ಷೇಪ
+                    ಇರುವುದಿಲ್ಲ.</i></p><br>
+            <p><i>ಚಿಕಿತ್ಸಾ ಅವಧಿಯಲ್ಲಿ ಸಂಘಟಕರು ಕೈಗೊಂಡ ಪ್ರತಿಯೊಂದು ಕಾರ್ಯಕ್ರಮದಲ್ಲಿ ಸಕ್ರೀಯವಾಗಿ ಭಾಗವಹಿಸುತ್ತೇನೆ. ಸಂಸ್ಥೆಯ ಎಲ್ಲಾ
+                    ನಿಯಮಗಳನ್ನು ನಿಷ್ಠೆಯಿಂದ ಪಾಲಿಸುತ್ತೇನೆ ಹಾಗೂ ವೈದ್ಯರು ನಿಗದಿಪಡಿಸಿದ ದಿನಾಂಕದವರೆಗೆ ಚಿಕಿತ್ಸೆಯಲ್ಲಿ
+                    ಪಾಲ್ಗೊಳ್ಳುತ್ತೇನೆ.<br></i></p><br>
+        </div>
+
+        <div id="signature1">
+            <p>ಚಿಕಿತ್ಸಾರ್ಥಿಯ</p>
+            <div id="name1"> <b>ಹೆಸರು</b> <input type="text">
+            </div>
+
+            <div id="sign1"> <b>ಸಹಿ</b> <input type="file" id="photo-upload" name="photo" accept="image/*">
+            </div>
+        </div>
+
+        <p><i>ಸಂಘಟಕರ ಗಮನಕ್ಕೆ ಬಾರದೇ, ತಿಳಿಸದೇ, ಸಂಸ್ಥೆಯಿಂದ ಹೊರಗೆ ಹೋಗಿ ಯಾವುದೇ ಅನಾಹುತ ಸಂಭವಿಸಿ ಸಮಸ್ಯೆಯಾದಲ್ಲಿ ದಾಖಲು ಪಡಿಸಿದ ನಾವೇ
+                ಜವಾಬ್ದಾರರು.<br></i>
+        </p>
+        <br>
+        <div id="signature2">
+            <p>ದಾಖಲುಪಡಿಸಿದವರ</p>
+            <div id="name2"> <b>ಹೆಸರು</b> <input type="text"> </div>
+
+            <div id="sign2"> <b>ಸಹಿ</b> <input type="file" id="photo-upload" name="photo" accept="image/*"></div>
+        </div><br>
+        <p id="mobileNo">ಮೊಬೈಲ್ ನಂ. <input type="text" name="moNo"></p>
+        <!-- <div id="pageNo">3</div> -->
+        <center>
+            <div class="footer">
+                <a href="/2.html">&laquo;</a>
+
+                <a href="#">3</a>
+
+                <a href="/4.html">&raquo;</a>
+            </div>
+        </center>
+    </div>
+
+</body>
+
+</html>

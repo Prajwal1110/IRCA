@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Intake Form</title>
+    <style>
+        .form-page {
+            position: relative;
+        }
+
+        label[for="photo"] {
+            position: absolute;
+            top: 0;
+            right: 300px;
+            margin-top: 35px;
+            /* Additional styling for the label if needed */
+        }
+
+        #photo {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: 35px;
+            /* Additional styling for the input if needed */
+        }
+
+
+        .top {
+            width: 100%;
+            text-align: center;
+        }
+
+        .intake-form {
+            width: auto;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .form-page {
+            border: double 6px black;
+            outline: solid 2px black;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-page::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+
+
+        .photo-section {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        /* h2 {
+            margin-bottom: 15px;
+        } */
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .column {
+            margin-top: 50px;
+            float: left;
+            width: 50%;
+        }
+
+        .column label {
+            display: inline-block;
+            width: 40%;
+            font-weight: bold;
+            /* Adjust label width as needed */
+        }
+
+        .column input[type="text"],
+        .column input[type="number"],
+        .column input[type="date"],
+        .column input[type="radio"] {
+            display: inline-block;
+            width: 55%;
+            border: #f0f0f0;
+            /* Adjust input width as needed */
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        select {
+            cursor: pointer;
+        }
+
+        .radio-group {
+            display: flex;
+            align-items: center;
+            /* Align items vertically */
+        }
+
+        .radio-group label {
+            margin-right: 20px;
+            /* Adjust margin between labels */
+        }
+
+
+        /* Styling for radio buttons */
+        .radio-list {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .radio-list li {
+            display: inline-block;
+            list-style-type: square;
+            margin-right: 20px;
+            text-align: right;
+        }
+
+        .radio-list label {
+            display: inline-block;
+            margin-right: 5px;
+            margin-bottom: none;
+            font-weight: normal;
+        }
+
+        .radio-list input[type="radio"] {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 3px;
+            border-color: #f0f0f0;
+        }
+
+
+
+        .mid {
+            text-align: left;
+            display: grid;
+            grid-template-columns: max-content auto;
+            /* Adjust the columns based on label and input */
+            gap: 10px;
+            /* Gap between elements */
+        }
+
+        .mid label {
+            align-self: center;
+            margin-bottom: 0;
+        }
+        .cl input{
+            border-color: #f0f0f0;
+        }
+        .mid input,
+        .mid select {
+            width: calc(100% - 10px);
+            /* Adjusting width for grid gap */
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border-color: #f0f0f0;
+            max-width: 100%;
+            /* Ensure input doesn't exceed container width */
+        }
+
+
+        .mid1 {
+            text-align: left;
+            display: grid;
+            grid-template-columns: max-content auto;    
+            /* Adjust the columns based on label and input */
+            gap: 10px;
+            /* Gap between elements */
+        }
+
+        .mid1 label {
+            float: right;
+            align-self: center;
+            /* Vertically center label */
+            /* justify-self: end; Align label to the end */
+            margin-bottom: 0;
+            /* Remove margin bottom for label */
+        }
+
+        .mid1 input,
+        .mid1 select {
+            width: 100%;
+            /* Full width within the grid cell */
+            border-color: #f0f0f0;
+            box-sizing: border-box;
+        }
+
+        .footer {
+            display: inline-block;
+        }
+
+        .footer a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 1px solid black;
+            margin: 0 4px;
+        }
+
+        .footer a.active {
+            background-color: #4CAF50;
+            color: white;
+            border: 1px solid #4CAF50;
+        }
+
+        .footer a:hover:not(.active) {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="intake-form">
+        <div class="form-page">
+            <div class="top">
+                <h2>INTAKE FORM</h2>
+                <label for="photo"></label><input type="file" id="photo" name="photo" accept="image/*" />
+            </div>
+
+            <div>
+                <div id="left-column" class="column">
+                    <label for="name" style="font-weight: bold">Name:</label>
+                    <input type="text" id="name" name="name" />
+                    <br />
+                    <label for="marital-status" style="font-weight: bold">Marital Status:</label>
+                    <input type="text" id="marital-status" name="marital-status" />
+                    <br />
+                    <label for="occupation" style="font-weight: bold">Occupation:</label>
+                    <input type="text" id="occupation" name="occupation" />
+                    <br />
+                </div>
+                <div id="right-column" class="column">
+                    <label for="age" style="font-weight: bold">Age:</label>
+                    <input type="number" id="age" name="age" />
+                    <br />
+                    <label for="dob" style="font-weight: bold">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" />
+                    <br />
+                    <label for="date-of-intake" style="font-weight: bold">Date of Intake:</label>
+                    <input type="date" id="date-of-intake" name="date-of-intake" />
+
+                    <div class="radio-group">
+                        <label style="font-weight: bold">BPL:</label>
+                        <label for="bpl-yes" style="font-weight: bold">
+                            <input type="radio" id="bpl-yes" name="bpl" value="Yes" />
+                            Yes
+                        </label>
+                        <label for="bpl-no" style="font-weight: bold">
+                            <input type="radio" id="bpl-no" name="bpl" value="No" />
+                            No
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cl">
+            <label>Accompanied by:</label><input type="text" name="accompaniedBy" />
+            <label">Year of Drinking
+                Abuse:</label><input type="text" name="yearOfDrinkingAbuse" /><label style="font-weight: normal">Year of
+                    Excessive
+                    Abuse:</label><input type="text" name="yearOfExcessiveAbuse" /><label
+                    style="font-weight: normal">Present Pattern
+                    Abuse:</label><input type="text" name="presentPatternAbuse" /><label
+                    style="font-weight: bold">Presence of:</label><input type="text" name="presenceOf" />
+                </div>
+                <ul class="radio-list">
+                    <li>
+                        <label>Use of other Drugs:</label><input type="radio" id="useOfOtherDrugsNil"
+                            name="useOfOtherDrugs" value="Nil" /><label for="useOfOtherDrugsNil">Nil</label><input
+                            type="radio" id="useOfOtherDrugsPastuseonly" name="useOfOtherDrugs"
+                            value="Pastuseonly" /><label for="useOfOtherDrugsPastuseonly">Past use only</label><input
+                            type="radio" id="useOfOtherDrugspresentlyusing" name="useOfOtherDrugs"
+                            value="presentlyusing" /><label for="useOfOtherDrugspresentlyusing">Presently using</label>
+                    </li>
+                </ul>
+                <ul class="radio-list">
+                    <li>
+                        <label>Psychiatric Problem:</label><input type="radio" id="psychiatricProblemNil"
+                            name="psychiatricProblem" value="Nil" /><label for="psychiatricProblemNil">Nil</label><input
+                            type="radio" id="psychiatricProblemMild" name="psychiatricProblem" value="Mild" /><label
+                            for="psychiatricProblemMild">Mild</label><input type="radio" id="psychiatricProblemModerate"
+                            name="psychiatricProblem" value="presentlyusing" /><label
+                            for="psychiatricProblemModerate">Moderate</label>
+                    </li>
+                </ul>
+                <ul class="radio-list">
+                    <li>
+                        <label>Denial:</label><input type="radio" id="denialMild" name="denial" value="Mild" /><label
+                            for="denialMild">Mild</label><input type="radio" id="denialModerate" name="denial"
+                            value="Moderate" /><label for="denialModerate">Moderate</label><input type="radio"
+                            id="denialSevere" name="denial" value="Severe" /><label for="denialSevere">Severe</label>
+                    </li>
+                </ul>
+                <div class="mid1">
+                    <label>Physical Problems(Record Specifically):</label><input type="text"
+                        name="physicalProblems" /><label>Prior Treatment for Aditicion:</label><input type="text"
+                        name="priorTreatment" />
+                </div>
+                <ul class="radio-list">
+                    <li>
+                        <label>Willingness for Treatment:</label><input type="radio"
+                            id="willingnessForTreatmentUnwilling" name="willingnessForTreatment"
+                            value="Unwilling" /><label for="willingnessForTreatmentUnwilling">Unwilling</label><input
+                            type="radio" id="willingnessForTreatmentHalfhearted" name="willingnessForTreatment"
+                            value="Halfhearted" /><label
+                            for="willingnessForTreatmentHalfhearted">Half-hearted</label><input type="radio"
+                            id="willingnessForTreatmentWilling" name="willingnessForTreatment" value="Willing" /><label
+                            for="willingnessForTreatmentWilling">Willing</label>
+                    </li>
+                </ul>
+                <div class="mid1">
+                    <label>Motivating factor for present treatment effort:</label><input type="text"
+                        name="motivatingFactor" />
+                </div>
+                <center>
+                    <div class="footer">
+                        <!-- <a href="#">&laquo;</a> -->
+
+                        <a href="#">1</a>
+
+                        <a href="/2.html">&raquo;</a>
+                    </div>
+                </center>
+        </div>
+
+    </div>
+</body>
+
+</html>

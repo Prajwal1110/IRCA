@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js or your main component
 
+import IntakeForm from '../src/components/Page1/Form';
+import {Routes,Route} from 'react-router-dom'
+import Form2 from '../src/components/Page2/Form2'
+import Form3 from '../src/components/Page3/Form3'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+    <Route path='/' element={<IntakeForm/>}/>
+    <Route path='/form2' element={<Form2/>}/>
+    {/* <Route path='/about' element={<About/>}/> */}
+    <Route path='/form3' element={<Form3/>}/>
+  </Routes>
+     
   );
 }
 
 export default App;
+

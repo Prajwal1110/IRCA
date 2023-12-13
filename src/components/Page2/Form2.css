@@ -1,0 +1,99 @@
+body {
+    position: relative;
+    width: 100%;
+    font-size: 16px; 
+}
+
+.id1 {
+    border: double 6px rgb(66, 64, 64);
+    outline: solid 2px rgb(68, 64, 64);
+    margin: 30px;
+    min-height: 86vh;
+    padding-left: 16px;
+    box-sizing: border-box; 
+}
+
+#p1 input[type="text"] {
+    border: none;
+    background: none;
+    outline: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+    width: 70%;
+}
+
+table {
+   
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 20px; 
+    /* box-sizing: border-box; */
+}
+
+th, td {
+   
+    border: 1px solid black;
+    padding: 8px;
+}
+
+td input[type="text"] {
+    border: none;
+    background: none;
+    outline: none;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+hr {
+    border-color: black;
+    margin-bottom: 20%;
+}
+ 
+#p2 input[type="text"] {
+   border: none;
+    background: none;
+    outline: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+    width: 70%;
+}
+
+#p2 p input[type="text"] {
+   border: none;
+    background: none;
+    outline: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+    width: 70%;
+}
+.footer {
+   display: inline-block;
+   /* margin-top: 20%; */
+}
+
+.footer a {
+   color: black;
+   float: left;
+   padding: 8px 16px;
+   text-decoration: none;
+   transition: background-color .3s;
+   border: 1px solid black;
+   margin: 0 4px;
+}
+
+.footer a.active {
+   background-color: #4CAF50;
+   color: white;
+   border: 1px solid #4CAF50;
+}
+
+.footer a:hover:not(.active) {
+   background-color: #ddd;
+}
